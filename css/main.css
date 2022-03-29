@@ -1,0 +1,272 @@
+/*** Generic styles ***/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 100%;
+    background-image: url('../images/bee.jpg') ;
+    background-repeat: no-repeat;
+    background-color: hsl(44, 85%, 50%);
+
+    /*** background parallax effect ***/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1,h2,h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+h6 {
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-size: .8em;
+    font-weight: 500;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+}
+
+q {
+    font-size: .8em;
+}
+
+img {
+    width:350px;
+    height: 350px;
+    object-fit: cover;
+    transition:all 2s;
+}
+
+footer{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1em 0em 1em 0em;
+    background-color: rgba(255, 255, 255, 0.205);
+}
+
+
+/*** Links ***/
+
+a:link {
+    color: white;
+    padding: .5em;
+    border-radius: 5%;
+    }
+
+  /* visited link */
+a:visited {
+    color: hsl(0, 0%, 100%);
+    padding: .5em;
+    border-radius: 5%;
+    }
+
+  /* mouse over link */
+a:hover {
+        background-color: hsl(44, 73%, 72%);
+        padding: .5em;
+        border-radius: 5%;
+    }
+
+  /* selected link */
+a:active {
+    color: #797979;
+    padding: .5em;
+    border-radius: 5%;
+}
+
+
+/*** Navigation Bar ***/
+
+nav{
+    max-width: 100%;
+    display:flex;
+    min-height: 15vh;
+    flex-direction: column;
+    margin: 2em 0em 0em 0em;
+}
+
+.logo, .logo-sub {
+    display:flex;
+    justify-content: center;
+    padding-bottom: .3em;;
+    font-family: Calistoga;
+}
+
+.logo{
+    font-size: 3em;
+}
+
+.logo-sub{
+    font-size: 1em;
+}
+
+.nav-list{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    margin:0em; 
+} 
+
+.nav-link{
+    text-decoration: none;
+    padding:1.3em;
+}
+
+#quote{
+    color: white;
+    display:flex;
+    justify-content: center;
+}
+
+
+/*** Movie ***/
+
+#movie-credits{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 3em;
+}
+
+.movie-credits{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.movie-credits>h6{
+    padding-bottom: .7em;
+}
+
+.movie-credits>p{
+    font-size: 10px;
+    font-weight:500;
+    padding: .4em;
+}
+
+#movie{
+    display: flex;
+    justify-content: center;
+}
+
+#video{
+    border: solid 5px hsla(0, 0%, 100%, .4);
+}
+/*** Image Gallery ***/
+
+#promo-gallery{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 3em;
+    /* background-color: white; */
+}
+
+#promo-gallery>h1{
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+}
+
+#promo-images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.promo-img{
+    max-width: 100%;
+    margin: 1em;
+    padding:.5em;
+    background-color: hsla(0, 0%, 100%, .4);;
+    }
+
+.promo-img>img:hover{
+    width:370px;
+    height: 370px;
+}
+
+
+/*** About Us/Contributor Content ***/
+
+#about-film{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#about-film-text{
+    width: 50em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0em 1em 1em 1em;
+    text-align: center;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+#about-film-text>h1{
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+    padding: 1em;
+}
+
+#contributors{
+    display: flex;
+    flex-direction: column;
+    }
+
+.contributor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* consider center */
+    flex-wrap: wrap;
+    padding: 1em 0em 1em 0em;
+}
+
+.contributor-img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid;
+    border-color: white;
+    border-radius: 50%;
+}
+
+.contributor-info{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    text-align: center;
+}
+
+.contributor-info>h1{
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+    padding: 1em;
+}
+
+.contributor-info>h2{
+    font-size: 1em;
+    padding: .5em;
+}
